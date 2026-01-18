@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dr. Lama Daher Dental Clinic - Over 10 years of professional dental care in Beirut, Lebanon. General dentistry, cosmetic treatments, and preventive care.">
+    <meta name="keywords" content="dentist, dental clinic, Beirut, Lebanon, Dr. Lama Daher, teeth whitening, cosmetic dentistry">
+    <title>Dr. Lama Daher - Dental Clinic | Beirut, Lebanon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <!-- Logo -->
+            <a href="#home" class="logo" onclick="scrollToSection(event, 'home')">
+                <div class="logo-icon">LD</div>
+                <span class="logo-text">Dr. Lama Daher</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop" id="navDesktop">
+                <a href="#home" onclick="scrollToSection(event, 'home')" data-key="nav.home">Home</a>
+                <a href="#about" onclick="scrollToSection(event, 'about')" data-key="nav.about">About</a>
+                <a href="#services" onclick="scrollToSection(event, 'services')" data-key="nav.services">Services</a>
+                <a href="#clinic" onclick="scrollToSection(event, 'clinic')" data-key="nav.clinic">Clinic</a>
+                <a href="#contact" onclick="scrollToSection(event, 'contact')" data-key="nav.contact">Contact</a>
+            </nav>
+
+            <!-- Language Switcher & Mobile Menu -->
+            <div class="header-actions">
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="ar">AR</button>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                    <svg class="close-icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile hidden" id="navMobile">
+            <a href="#home" onclick="scrollToSection(event, 'home')" data-key="nav.home">Home</a>
+            <a href="#about" onclick="scrollToSection(event, 'about')" data-key="nav.about">About</a>
+            <a href="#services" onclick="scrollToSection(event, 'services')" data-key="nav.services">Services</a>
+            <a href="#clinic" onclick="scrollToSection(event, 'clinic')" data-key="nav.clinic">Clinic</a>
+            <a href="#contact" onclick="scrollToSection(event, 'contact')" data-key="nav.contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-pattern"></div>
+        <div class="hero-decoration-1"></div>
+        <div class="hero-decoration-2"></div>
+
+        <div class="container hero-content">
+            <div class="hero-badge animate-fade-in">
+                <span class="badge-dot"></span>
+                <span data-key="hero.welcome">Welcome to</span>
+            </div>
+
+            <h1 class="hero-title animate-fade-in delay-1" data-key="hero.clinic">Dr. Lama Daher Dental Clinic</h1>
+            <p class="hero-tagline animate-fade-in delay-2" data-key="hero.tagline">Your smile is our priority</p>
+            <p class="hero-description animate-fade-in delay-3" data-key="hero.description">Experience gentle, personalized dental care in a warm and welcoming environment. Over 10 years of expertise dedicated to your oral health.</p>
+
+            <div class="hero-cta animate-fade-in delay-4">
+                <button class="btn btn-primary" onclick="scrollToSection(event, 'contact')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span data-key="hero.cta">Book an Appointment</span>
+                </button>
+                <button class="btn btn-outline" onclick="scrollToSection(event, 'about')">
+                    <span data-key="hero.learnMore">Learn More</span>
+                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </button>
+            </div>
+
+            <div class="hero-stats animate-fade-in delay-5">
+                <div class="stat">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label" data-key="hero.years">Years</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">USJ</div>
+                    <div class="stat-label" data-key="hero.graduate">Graduate</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label" data-key="hero.smiles">Smiles</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-bg-decoration"></div>
+        <div class="container about-container">
+            <div class="about-grid">
+                <!-- Image Side -->
+                <div class="about-image-wrapper">
+                    <div class="about-image">
+                        <div class="about-image-frame"></div>
+                        <div class="about-image-content">
+                            <img 
+                                src="DrLama.png" 
+                                alt="Dr. Lama Daher"
+                                class="about-doctor-image">
+                                <div class="about-avatar">LD</div>
+                            <p class="about-avatar-name">Dr. Lama Daher</p>
+                            <p class="about-avatar-title">DDS, USJ</p>
+                        </div>
+
+                    </div>
+                    <div class="about-accent-1"></div>
+                    <div class="about-accent-2"></div>
+                </div>
+
+                <!-- Content Side -->
+                <div class="about-content">
+                    <h2 class="section-title" data-key="about.title">About Dr. Lama Daher</h2>
+                    <p class="about-subtitle" data-key="about.subtitle">Dedicated to Excellence in Dental Care</p>
+                    <p class="about-description" data-key="about.description">Dr. Lama Daher is a passionate dentist from Lebanon, graduated from the prestigious Université Saint-Joseph (USJ). With more than 10 years of professional experience, she combines expertise with compassion to provide the highest quality dental care.</p>
+
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <div class="highlight-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                            </div>
+                            <div class="highlight-content">
+                                <h3 data-key="about.education">Education</h3>
+                                <p data-key="about.education.text">Doctor of Dental Surgery from Université Saint-Joseph (USJ), Beirut</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                            </div>
+                            <div class="highlight-content">
+                                <h3 data-key="about.experience">Experience</h3>
+                                <p data-key="about.experience.text">10+ years of professional practice in general and cosmetic dentistry</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                            </div>
+                            <div class="highlight-content">
+                                <h3 data-key="about.values">Values</h3>
+                                <p data-key="about.values.text">Patient comfort, gentle care, and lasting relationships built on trust</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-key="services.title">Our Services</h2>
+                <p class="section-subtitle" data-key="services.subtitle">Comprehensive Dental Care for the Whole Family</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>
+                    </div>
+                    <h3 data-key="services.general.title">General Dentistry</h3>
+                    <p data-key="services.general.description">Complete dental exams, cleanings, fillings, and restorative treatments to maintain your oral health.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
+                    </div>
+                    <h3 data-key="services.cosmetic.title">Cosmetic Dentistry</h3>
+                    <p data-key="services.cosmetic.description">Teeth whitening, veneers, and smile makeovers to enhance your natural beauty.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3 data-key="services.preventive.title">Preventive Care</h3>
+                    <p data-key="services.preventive.description">Regular check-ups, dental hygiene education, and early detection to prevent future problems.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12h.01"/><path d="M15 12h.01"/><path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"/><path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"/></svg>
+                    </div>
+                    <h3 data-key="services.pediatric.title">Pediatric Dentistry</h3>
+                    <p data-key="services.pediatric.description">Gentle, child-friendly dental care to establish healthy habits from an early age.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinic Info Section -->
+    <section id="clinic" class="clinic">
+        <div class="clinic-bg-decoration"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-key="clinic.title">Visit Our Clinic</h2>
+                <p class="section-subtitle" data-key="clinic.subtitle">We look forward to welcoming you</p>
+            </div>
+
+            <div class="clinic-grid">
+                <!-- Working Hours -->
+                <div class="clinic-card">
+                    <div class="clinic-card-header">
+                        <div class="clinic-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <h3 data-key="clinic.hours">Working Hours</h3>
+                    </div>
+                    <div class="clinic-hours">
+                        <div class="hours-row">
+                            <span data-key="clinic.monday">Monday - Friday</span>
+                            <span class="hours-time">9:00 - 14:00</span>
+                        </div>
+                        <div class="hours-row">
+                            <span data-key="clinic.saturday">Saturday</span>
+                            <span class="hours-time">9:00 - 13:00</span>
+                        </div>
+                        <div class="hours-row">
+                            <span data-key="clinic.sunday">Sunday</span>
+                            <span class="hours-time closed" data-key="clinic.closed">Closed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location -->
+                <div class="clinic-card">
+    <div class="clinic-card-header">
+        <div class="clinic-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+            </svg>
+        </div>
+        <h3 data-key="clinic.location">Location</h3>
+    </div>
+
+    <p>Nabatieh, Lebanon</p>
+
+    <div class="clinic-map">
+        <iframe
+            src="https://www.google.com/maps?q=33.38203,35.48200&z=16&output=embed"
+            loading="lazy">
+        </iframe>
+    </div>
+</div>
+
+
+                <!-- Phone -->
+                <div class="clinic-card">
+                    <div class="clinic-card-header">
+                        <div class="clinic-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <h3 data-key="clinic.phone">Phone</h3>
+                    </div>
+                    <a href="tel:+96171391365" class="clinic-phone-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <span>+961 71 391 365</span>
+                    </a>
+                    <p class="clinic-phone-note" data-key="clinic.callNow">Call now to book your appointment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo-icon">LD</div>
+                <div class="footer-brand-info">
+                    <p class="footer-brand-name">Dr. Lama Daher</p>
+                    <p class="footer-tagline" data-key="footer.tagline">Creating beautiful smiles, one patient at a time.</p>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <span>© <span id="currentYear">2026</span> Dr. Lama Daher.</span>
+                <span data-key="footer.rights">All rights reserved.</span>
+            </div>
+
+            <div class="footer-made">
+                <span data-key="footer.madeWith">Made with</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                <span data-key="footer.inLebanon">in Lebanon</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <span data-key="contact.success">Thank you! We'll get back to you soon.</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
